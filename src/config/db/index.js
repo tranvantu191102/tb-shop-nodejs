@@ -9,6 +9,7 @@ const connect = async () => {
         await mongoose.connect(process.env.URL_MONGOOSE)
         console.log('Connect successful!!!')
     } catch (error) {
+        console.log(error)
         console.log('Connect failure!!!')
     }
 }
